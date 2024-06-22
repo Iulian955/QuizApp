@@ -1,0 +1,434 @@
+@import "./../../main.module.scss";
+@import "./../../data//themes.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.homepageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100rem;
+  margin: auto;
+  background: url("../../media/assets/pics//homepage/bgMih.jpg");
+  background-size: cover;
+  // background-position: 100% 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  @include media("<tablet") {
+  }
+  @include media(">=tablet", "<desktop") {
+  }
+}
+
+.homeWrapper {
+  width: 100%;
+  height: 100%;
+  padding: 9rem 4rem;
+  @include media("<tablet") {
+    padding: 6rem 2rem;
+  }
+  @include media(">=tablet", "<desktop") {
+    padding: 7rem 3rem;
+  }
+}
+
+.firstBox {
+  width: 60%;
+  background: linear-gradient(108.35deg, #000000 0.13%, rgba(115, 115, 115, 0.37) 99.87%);
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  @include media("<tablet") {
+    width: 100%;
+  }
+  @include media(">=tablet", "<desktop") {
+  }
+}
+
+.mainTitle {
+  font-family: "Istok Web";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 46.03px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: white;
+  @include media("<tablet") {
+    font-size: 28px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 30px;
+  }
+}
+
+.boxText {
+  font-family: "Istok Web";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17.27px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: white;
+  @include media("<tablet") {
+    font-size: 8px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 10px;
+  }
+}
+
+.boxBtns {
+  display: flex;
+  gap: 1rem;
+  @include media("<tablet") {
+  }
+  @include media(">=tablet", "<desktop") {
+  }
+}
+
+.greenBtn {
+  background: rgba(0, 128, 0, 1);
+  color: white;
+  font-family: "Istok Web";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17.27px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  @include media("<tablet") {
+    font-size: 8px;
+    padding: 0.2rem 0.8rem;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 10px;
+  }
+}
+
+.whiteBtn {
+  background: transparent;
+  color: white;
+  font-family: "Istok Web";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17.27px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  outline: 2px solid white;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  @include media("<tablet") {
+    font-size: 8px;
+    padding: 0.2rem 0.8rem;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 10px;
+  }
+}
+
+.secondBox {
+  width: 100%;
+  background: linear-gradient(
+    108.35deg,
+    #000000 0.13%,
+    rgba(44, 44, 44, 0.7606) 0.14%,
+    rgba(115, 115, 115, 0.37) 99.87%
+  );
+  padding: 2.2rem;
+  border-radius: 20px;
+  margin-top: 3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  @include media("<tablet") {
+    padding: 2.2rem 1rem;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  @include media(">=tablet", "<desktop") {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.classTitle {
+  font-family: "Istok Web";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20.15px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: white;
+  @include media("<tablet") {
+    font-size: 10px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 12px;
+  }
+}
+
+.classText {
+  width: 70%;
+  font-family: "Istok Web";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.27px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: white;
+  @include media("<tablet") {
+    font-size: 8px;
+    width: 100%;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 10px;
+    width: 100%;
+  }
+}
+
+.class {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  @include media("<tablet") {
+    gap: 0.5rem;
+  }
+  @include media(">=tablet", "<desktop") {
+    gap: 0.8rem;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+    @include media("<tablet") {
+    }
+    @include media(">=tablet", "<desktop") {
+    }
+  }
+}
+
+.thirdBox {
+  width: 100%;
+  background: linear-gradient(108.35deg, #3fd19d 0.13%, rgba(0, 0, 0, 0.7606) 0.14%, rgba(0, 0, 0, 0.37) 99.87%);
+  padding: 2.2rem;
+  border-radius: 20px;
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  @include media("<tablet") {
+    margin-top: 8rem;
+  }
+  @include media(">=tablet", "<desktop") {
+    margin-top: 10rem;
+  }
+}
+
+.thirdMainTitle {
+  font-family: "Istok Web";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34.55px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: white;
+  @include media("<tablet") {
+    font-size: 20px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 22px;
+  }
+}
+
+.thirdBox {
+  font-family: "Istok Web";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17.27px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: white;
+  @include media("<tablet") {
+    font-size: 8px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 10px;
+  }
+}
+
+.numberLast {
+  font-family: "Istok Web";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46.06px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: white;
+  @include media("<tablet") {
+    font-size: 28px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 30px;
+  }
+}
+
+.textLast {
+  width: 70%;
+  font-family: "Istok Web";
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 11.52px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: white;
+  @include media("<tablet") {
+    font-size: 4px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 6px;
+  }
+}
+
+.lastDiv {
+  display: flex;
+  gap: 1.4rem;
+  @include media("<tablet") {
+  }
+  @include media(">=tablet", "<desktop") {
+  }
+}
+
+.forthDiv {
+  width: 90%;
+  background: linear-gradient(
+    108.35deg,
+    #3fd19d 0.13%,
+    rgba(242, 193, 193, 0.7606) 0.14%,
+    rgba(129, 114, 114, 0.37) 99.87%
+  );
+  margin: auto;
+  padding: 2.2rem 4rem;
+  border-radius: 20px;
+  margin-top: 8rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  @include media("<tablet") {
+    padding: 2rem;
+  }
+  @include media(">=tablet", "<desktop") {
+  }
+}
+
+.forthWrapp {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  @include media("<tablet") {
+  }
+  @include media(">=tablet", "<desktop") {
+  }
+}
+
+.forthText {
+  font-family: "Istok Web";
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 27.35px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+  @include media("<tablet") {
+    font-size: 15px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 17px;
+  }
+}
+
+.header {
+  padding: 1rem 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include media("<tablet") {
+  }
+  @include media(">=tablet", "<desktop") {
+  }
+}
+
+.logoDiv {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  @include media("<tablet") {
+  }
+  @include media(">=tablet", "<desktop") {
+  }
+}
+
+.logoImg {
+  img {
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    @include media("<tablet") {
+      width: 60px;
+      height: 40px;
+    }
+    @include media(">=tablet", "<desktop") {
+    }
+  }
+}
+
+.headerBtn {
+  button {
+    font-family: "Istok Web";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17.27px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    border: none;
+    background-color: rgba(0, 128, 0, 1);
+    color: white;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    @include media("<tablet") {
+      font-size: 10px;
+    }
+    @include media(">=tablet", "<desktop") {
+    }
+  }
+}
+
+.logoText {
+  font-family: "Istok Web";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.03px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: white;
+  @include media("<tablet") {
+    font-size: 14px;
+  }
+  @include media(">=tablet", "<desktop") {
+  }
+}
